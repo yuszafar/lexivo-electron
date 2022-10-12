@@ -18,14 +18,14 @@ function check_auth() {
             error: function (data) {
                 localStorage.removeItem('access_token');
                 localStorage.removeItem('refresh_token');
-                window.location.href = 'src/login.html';
+                window.location.href = 'login.html';
             }
         });
 
     } else {
         localStorage.removeItem('access_token');
         localStorage.removeItem('refresh_token');
-        window.location.href = 'src/login.html';
+        window.location.href = 'login.html';
     }
 }
 
